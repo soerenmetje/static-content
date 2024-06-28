@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&display=swap');
+
+body {
+    color: #1c1c1c;
+    background: #f7f7f7;
+    font-family: 'JetBrains Mono', monospace;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+table, th, td {
+    border: 2px solid #1c1c1c;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+iframe {
+    border: 0 solid black;
+}
+
+::selection {
+    background: #66ff7a;
+}
+
+[type=number],
+[type=text] {
+    font-family: 'JetBrains Mono', monospace;
+    border: 1px solid #1c1c1c;
+    padding: 8px;
+    margin: 4px 5px;
+    background: white;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+[type=text] {
+    width: 70%;
+}
+
+[type=number]:focus,
+[type=text]:focus {
+    box-shadow: 0 0 0 3px #999;
+    outline: 0;
+}
+
+[type=submit],
+[type=button],
+[type=reset],
+button {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #1c1c1c;
+    border: none;
+    color: #f7f7f7;
+    padding: 7px 15px;
+    min-width: 120px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    transition: color .1s ease-in-out, background-color .1s ease-in-out, border-color .1s ease-in-out, box-shadow .1s ease-in-out;
+    transition-property: color, background-color, border-color, box-shadow;
+    transition-duration: 0.1s, 0.1s, 0.1s, 0.1s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s, 0s, 0s;
+}
+
+[type=submit]:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+button:disabled {
+    background-color: #888;
+    cursor: unset;
+}
+
+[type=submit]:hover:not(:disabled),
+[type=button]:hover:not(:disabled),
+[type=reset]:hover:not(:disabled),
+button:hover:not(:disabled) {
+    background-color: #333;
+}
+
+[type=submit]:active:not(:disabled),
+[type=button]:active:not(:disabled),
+[type=reset]:active:not(:disabled),
+button:active:not(:disabled) {
+    background-color: #666;
+}
+
+[type=submit]:focus,
+[type=button]:focus,
+[type=reset]:focus,
+button:focus {
+    box-shadow: 0 0 0 3px #999;
+    outline: 0;
+}
+
+.border {
+    border: 2px solid #1c1c1c;
+}
+
+.box {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.txt-sec {
+    color: #8c8c8c;
+    font-size: small;
+}
